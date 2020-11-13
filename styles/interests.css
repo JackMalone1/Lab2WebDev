@@ -1,0 +1,86 @@
+
+#Introduction{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../img/interests_intro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gainsboro;
+    background-attachment: fixed;
+
+
+    text-align: center;
+    text-underline-position: below;
+    color: darkred;
+    text-size-adjust: 90;
+}
+
+#Films{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../img/films.jpg');
+    background-attachment: fixed;
+
+    text-align: center;
+    color: green;
+}
+
+#History{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../img/history.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Volounteering{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../img/OMAC.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 70px;
+    text-align: left;
+    text-decoration: none;
+}
+  
+
+.fa:hover {
+    opacity: 0.7;
+}
+  
+
+.fa-instagram {
+    background: #03e76a;
+    color: white;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td{
+    padding: 15px;
+}
+
+th{
+    text-align: left;
+}
+
+table{
+    border-spacing: 4px;
+}
+
+ul{
+    list-style-type: square;
+}
+

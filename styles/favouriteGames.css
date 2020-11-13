@@ -1,0 +1,28 @@
+
+#games-list{
+    background-color: gray;
+    color: #CCCCCC;
+    text-decoration: underline;
+}
+
+ol{
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+    background: #3399ff;
+    border: 1px solid #ddd;
+}
+
+ol.b {
+    list-style-position: inside;
+}
+
+ol li{
+    background-color: aquamarine;
+    margin: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+ol li:last-child {
+    border-bottom: none
+}

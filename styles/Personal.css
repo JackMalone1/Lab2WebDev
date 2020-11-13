@@ -1,0 +1,73 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    text-align: center;
+    color: orangered;
+}
+
+h3{
+    text-align: center;
+    color: orange;
+}
+
+p{
+    color: whitesmoke;
+    background-color: olivedrab;
+}
+
+img{
+    align-content: left;
+}
+
+
+.center-text {
+    text-align: center;
+    display: block;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 15px;
+}
+
+th{
+    text-align: left;
+}
+
+table{
+    border-spacing: 4px;
+}
+
+ul{
+    list-style-type: square;
+}
+
+#General{
+    background-color: gray;
+}
+
+#Myself{
+    background-color: lightgrey;
+}
+
+#Education{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../img/education.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Interests{
+    background-color: gray;
+}
+
+#Contact{
+    background-color: lightgrey;
+}
