@@ -1,0 +1,109 @@
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    text-align: justify;
+    padding: 2em 1%;
+    vertical-align: middle;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header nav.ul {
+    padding: 30;
+}
+
+header nav.li {
+    margin-left: 50px;
+    padding-left: 10px;
+    margin: 1em 0;
+}
+
+body{
+    margin: 0;
+    margin-top: 50;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+  
+  a:link {
+    color: #265301;
+}
+  
+  a:visited {
+    color: #437A16;
+}
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+}
+  
+  a:hover {
+    border-bottom: 1px solid;     
+    background: #CDFEAA;
+}
+  
+  a:active {
+    background: #265301;
+    color: #CDFEAA;
+}
+
+section {
+    height: 130vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  color: greenyellow;
+}
+
+#CV {
+  background-image: url('cv.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#About {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('about_me.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#FavouriteGames {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('favourite_games.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Interests {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('interests.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ContactDetails{
+  background-color: darkgray;
+}
+
+#CV-Display{
+  background-color: lightgray;
+}
