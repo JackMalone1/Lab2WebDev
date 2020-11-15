@@ -1,37 +1,26 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <title>CV</title>
-        <link rel="stylesheet" href="static/basic-style.css">
-    </head>
+{% block header %}
+<div class="center-text">
+    <a id="home" href="/">HomePage</a>
+</div>
+{% endblock %}
 
-    <body>
-        <header>
-            <div class="center-text">
-                <a id="home" href="/">HomePage</a>
-            </div>
+{% block menu %}
+<li><a href="#CV-Display">CV</a></li>
+ <li><a href="#ContactDetails">Contact Details</li>
+{% endblock %}
 
-            <nav>
-                <ul>
-                    <li><a href="#CV-Display">CV</a></li>
-                    <li><a href="#ContactDetails">Contact Details</li>
-                </ul>
-            </nav>
-        </header>
+{% block body %}
+<section id="CV-Display">
+    <div class="section-inner">
+        <embed src="static/Malone_Jack_CV.pdf#zoom=50" type="application/pdf" width="100%" height="600px"/>
+    </div>
+</section>
 
-        <main>
-            <section id="CV-Display">
-                <div class="section-inner">
-                    <embed src="static/Malone_Jack_CV.pdf#zoom=50" type="application/pdf" width="100%" height="600px"/>
-                </div>
-            </section>
-
-            <section id="ContactDetails">
-                <div class="section-inner">
-                    <a href="mailto: c00236428@itcarlow.ie?subject = CV&body = Message">Send email</a>
-                </div>
-            </section>
-        </main>
-    </body>
-</html>
+<section id="ContactDetails">
+    <div class="section-inner">
+        <a href="mailto: c00236428@itcarlow.ie?subject = CV&body = Message">Send email</a>
+    </div>
+</section>
+{% endblock %}

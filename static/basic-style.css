@@ -107,3 +107,96 @@ footer {
 #CV-Display{
   background-color: lightgray;
 }
+
+#Introduction{
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('interests_intro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gainsboro;
+  background-attachment: fixed;
+
+
+  text-align: center;
+  text-underline-position: below;
+  color: darkred;
+  text-size-adjust: 90;
+
+}
+
+#Films{
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('films.jpg');
+  background-attachment: fixed;
+
+  text-align: center;
+  color: green;
+  height: auto;
+}
+
+table.interests, th.interests, td.interests
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th.interests, td.interests
+{
+  padding: 15px;
+}
+
+th.interests
+{
+  text-align: left;
+}
+
+table.interests
+{
+  border-spacing: 4px;
+}
+
+img.interests
+{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+#History{
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('history.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+ul.interests{
+  list-style-type: square;
+}
+
+#Volounteering{
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('OMAC.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 70px;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-instagram {
+  background: #03e76a;
+  color: white;
+}
