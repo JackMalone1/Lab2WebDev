@@ -1,47 +1,35 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <title>My Favourite Games</title>
-        <link rel="stylesheet" href="styles/favouriteGames.css">
-        <link rel="stylesheet" href="styles/basic-style.css">
-    </head>
+{% block header %}
+<div class="center-text">
+    <a id="home" href="/">HomePage</a>
+</div>
+{% endblock %}
 
-    <body>
-        <header>
-            <div class="center-text">
-                <a id="home" href="index.html">HomePage</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#games-list">Games-list</a></li>
-                </ul>
-            </nav>
-        </header>
+{% block menu %}
+<li><a href="#games-list">Games-list</a></li>
+{% endblock %}
 
-        <main>
-            <section id="games-list">              
-                <pre>
-                    <h1>List of my current favourite games</h1><br>
-                </pre>
-                <ol>
-                    <li>
-                        <a href="DFFOO.html" target="_blank">Dissidia Final Fantasy: Opera Omnia</a>
-                        <img src="img/DFFOO.jpg" alt="Netflix Party">
-                    </li>
+{% block body %}
+<section id="games-list">              
+    <pre>
+        <h1>List of my current favourite games</h1><br>
+    </pre>
+    <ol>
+        <li>
+            <a href="/DFFOO" target="_blank">Dissidia Final Fantasy: Opera Omnia</a>
+            <img src="static/DFFOO.jpg" alt="DFFOO">
+        </li>
 
-                    <li>
-                        <a href="AssassinsCreed.html" target="_blank">Assassin's Creed Odyssey</a>
-                        <img src="img/ACO.jpg" alt="Netflix Party">
-                    </li>
+        <li>
+            <a href="/AssassinsCreed" target="_blank">Assassin's Creed Odyssey</a>
+            <img src="static/ACO.jpg" alt="Assassins Creed">
+        </li>
 
-                    <li>
-                        <a href="GOW.html" target="_blank">God of War 4 (PS4 God of War)</a>
-                        <img src="img/GOW.jpg" alt="Netflix Party">
-                    </li>
-                </ol>
-            </section>
-        </main>
-        
-    </body>
-</html>
+        <li>
+            <a href="/GodOfWar" target="_blank">God of War 4 (PS4 God of War)</a>
+            <img src="static/GOW.jpg" alt="GOW">
+        </li>
+    </ol>
+</section>
+{% endblock %}

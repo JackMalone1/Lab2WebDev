@@ -1,119 +1,114 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <title>Assassin's creed Odyssey</title>
-        <link rel="stylesheet" href="static/game.css">
-        <link rel="stylesheet" href="static/basic-style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="slideshow.js"></script>
-    </head>
+{% block head %}
+<script src="static/slideshow.js"></script>
+{% endblock %}
 
-    <body>
-        <header>
-            <div class="center-text">
-                <a id="home" href="index.html">HomePage</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#Images">Images</a></li>
-                    <li><a href="#ExternalLinks">External Links</a></li>
-                    <li><a href="#Reviews">Reviews</a></li>
-                    <li><a href="#MyThoughts">My Thoughts</a></li>
-                </ul>
-            </nav>
-        </header>
+{% block header %}
+<div class="center-text">
+    <a id="home" href="/">HomePage</a>
+</div>
+{% endblock %}
 
-        <main>
-            <section id="Images">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="static/ACO.jpg" style="width:300%">
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="static/ACO-2.jpg" style="width:300%">
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="static/ACO-3.jpg" style="width:300%">
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-            </section>
+{% block menu %}
+<li><a href="#Images">Images</a></li>
+<li><a href="#ExternalLinks">External Links</a></li>
+<li><a href="#Reviews">Reviews</a></li>
+<li><a href="#MyThoughts">My Thoughts</a></li>
+{% endblock %}
 
-            <section id="ExternalLinks">
-                <div class="section-inner">
-                    <h2>Useful Links</h2>
-                    <a href="https://www.ubisoft.com/en-us/game/assassins-creed/odyssey" target="_blank">Link to the game on Ubisofts' website</a><br>
-                    <a href="https://twitter.com/assassinscreed?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"class="fa fa-twitter">
-                        Twitter page for the overall game seeries including this gmae.
-                    </a><br>
-                    <a href="https://assassinscreed.fandom.com/wiki/Assassin%27s_Creed:_Odyssey" target="_blank">Fan website of the game</a><br>
-                    <a href="https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/" target="_blank">Steam page for the game</a>
+{% block body %}
+<section id="Images">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="static/ACO.jpg" style="width:300%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="static/ACO-2.jpg" style="width:300%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="static/ACO-3.jpg" style="width:300%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+</section>
 
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WlWAaRmKNHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </p>
-                </div>
-            </section>
+<section id="ExternalLinks">
+    <div class="section-inner">
+        <h2>Useful Links</h2>
+        <a href="https://www.ubisoft.com/en-us/game/assassins-creed/odyssey" target="_blank">Link to the game on Ubisofts' website</a><br>
+        <a href="https://twitter.com/assassinscreed?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"class="fa fa-twitter">
+            Twitter page for the overall game seeries including this gmae.
+        </a><br>
+        <a href="https://assassinscreed.fandom.com/wiki/Assassin%27s_Creed:_Odyssey" target="_blank">Fan website of the game</a><br>
+        <a href="https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/" target="_blank">Steam page for the game</a>
 
-            <section id="Reviews">
-                <div class="section-inner">
-                    <p>
-                        There are several reviews from people who have played the game which can be found on the steam store page for the game<br>
-                        which I have linked above.<br>
-                        There has been several journalists who have also taken time to review the game and upload it online.<br>
-                    </p>
-                    <p>
-                        <a href="https://www.metacritic.com/game/playstation-4/assassins-creed-odyssey" target="_blank">
-                            Game on metacritic
-                        </a>                
-                        <a href="https://www.ign.com/articles/2018/10/01/assassins-creed-odyssey-review" target="_blank">
-                            IGN's review of the game.
-                        </a>
-                    </p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WlWAaRmKNHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+    </div>
+</section>
 
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YoI4beQtb6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </iframe>
-                    </p>    
-                </div>
-            </section>
+<section id="Reviews">
+    <div class="section-inner">
+        <p>
+            There are several reviews from people who have played the game which can be found on the steam store page for the game<br>
+            which I have linked above.<br>
+            There has been several journalists who have also taken time to review the game and upload it online.<br>
+        </p>
+        <p>
+            <a href="https://www.metacritic.com/game/playstation-4/assassins-creed-odyssey" target="_blank">
+                Game on metacritic
+            </a>                
+            <a href="https://www.ign.com/articles/2018/10/01/assassins-creed-odyssey-review" target="_blank">
+                IGN's review of the game.
+            </a>
+        </p>
 
-            <section id="MyThoughts">
-                <div class="section-inner">
-                    <h2>What's good about the game?</h2>
-                    <p>
-                        The graphics for the game were really good.<br>
-                        I havent played an Assassin's creed game in a few years<br>
-                        and the graphics have improved a lot.<br>
-                        the voice acting and music has also improved a lot and the combat<br>
-                        of the game is good.
-                    </p>
+        <p>
+            <iframe width="560"
+             height="315"
+              src="https://www.youtube-nocookie.com/embed/YoI4beQtb6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+        </p>    
+    </div>
+</section>
 
-                    <h2>Why do I like the game?</h2>
-                    <p>
-                        <ul>
-                            <li>Improved graphics compared to earlier games</li>
-                            <li>The game has a really big world to explore</li>
-                            <li>A lot of things to do in the game</li>
-                        </ul>
-                    </p>
+<section id="MyThoughts">
+    <div class="section-inner">
+        <h2>What's good about the game?</h2>
+        <p>
+            The graphics for the game were really good.<br>
+            I havent played an Assassin's creed game in a few years<br>
+            and the graphics have improved a lot.<br>
+            the voice acting and music has also improved a lot and the combat<br>
+            of the game is good.
+        </p>
 
-                    <h2>What do others think of the game?</h2>
-                    <p>
-                        <a href="https://www.reddit.com/r/assassinscreed/comments/epd43c/what_is_your_favorite_part_about_assassins_creed/" target="_blank" class="fa fa-reddit">Link to reddit thread discussing good and bad points of the game</a><br>
-                        Overall there seems to be a bit of a mixed reception to the gamae, with some people loving the game and some people not liking it.<br>
-                        I think the main reason for people not liking the game is that it feels different to the rest of the Assassin's Creed games.
-                    </p>
-                </div>
-            </section>
-        </main>        
-    </body>
-</html>
+        <h2>Why do I like the game?</h2>
+        <p>
+            <ul>
+                <li>Improved graphics compared to earlier games</li>
+                <li>The game has a really big world to explore</li>
+                <li>A lot of things to do in the game</li>
+            </ul>
+        </p>
+
+        <h2>What do others think of the game?</h2>
+        <p>
+            <a href="https://www.reddit.com/r/assassinscreed/comments/epd43c/what_is_your_favorite_part_about_assassins_creed/"
+             target="_blank" class="fa fa-reddit">
+             Link to reddit thread discussing good and bad points of the game</a><br>
+            Overall there seems to be a bit of a mixed reception to the gamae, with some people loving the game and some people not liking it.<br>
+            I think the main reason for people not liking the game is that it feels different to the rest of the Assassin's Creed games.
+        </p>
+    </div>
+</section>
+{% endblock %}

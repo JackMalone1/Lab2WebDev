@@ -1,139 +1,130 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <title>God of War 4</title>
-        <link rel="stylesheet" href="styles/game.css">
-        <link rel="stylesheet" href="styles/basic-style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="slideshow.js"></script>
-    </head>
+{% block head %}
+<script src="static/slideshow.js"></script>
+{% endblock %}
 
-    <body>
-        <header>
-            <div class="center-text">
-                <a id="home" href="index.html">HomePage</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#Images">Images</a></li>
-                    <li><a href="#ExternalLinks">External Links</a></li>
-                    <li><a href="#Reviews">Reviews</a></li>
-                    <li><a href="#MyThoughts">My Thoughts</a></li>
-                </ul>
-            </nav>
-        </header>
+{% block header %}
+<div class="center-text">
+    <a id="home" href="/">HomePage</a>
+</div>
+{% endblock %}
 
-        <main>
-            <section id="Images">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="img/GOW-1.jpg" style="width:300%">
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="img/GOW-2.jpg" style="width:300%">
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="img/GOW-3.jpg" style="width:300%">
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-            </section>
+{% block menu %}
+<li><a href="#Images">Images</a></li>
+<li><a href="#ExternalLinks">External Links</a></li>
+<li><a href="#Reviews">Reviews</a></li>
+<li><a href="#MyThoughts">My Thoughts</a></li>
+{% endblock %}
 
-            <section id="ExternalLinks">
-                <div class="section-inner">
-                    <h2>Useful Links</h2>
-                    <a href="https://godofwar.playstation.com/" target="_blank" class="fa fa-play-circle-o">Playstation website for the game</a><br>
-                    <a href="https://twitter.com/godofwar?lang=en" target="_blank"class="fa fa-twitter">
-                        Twitter page for the game.(Doesn't seem to be used)
-                    </a><br>
-                    <a href="https://godofwar.fandom.com/wiki/God_of_War_(2018)" target="_blank">Fandom wiki for the game</a><br>
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ra_R-K_IoUc" 
-                         frameborder="0"
-                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                         allowfullscreen>
-                        </iframe>
-                    </p>
-                </div>
-            </section>
+{% block body %}
+<section id="Images">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="static/GOW-1.jpg" style="width:300%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="static/GOW-2.jpg" style="width:300%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="static/GOW-3.jpg" style="width:300%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+</section>
 
-            <section id="Reviews">
-                <div class="section-inner">
-                    <p>
-                        This game seems to get really good reviews from critics <br>
-                        And players. It has a full score on both IGN and Metacritic<br>
-                    </p>
-                    <a href="https://www.ign.com/articles/2018/04/12/god-of-war-review" target="_blank">
-                        IGN review
-                    </a>
+<section id="ExternalLinks">
+    <div class="section-inner">
+        <h2>Useful Links</h2>
+        <a href="https://godofwar.playstation.com/" target="_blank" class="fa fa-play-circle-o">Playstation website for the game</a><br>
+        <a href="https://twitter.com/godofwar?lang=en" target="_blank"class="fa fa-twitter">
+            Twitter page for the game.(Doesn't seem to be used)
+        </a><br>
+        <a href="https://godofwar.fandom.com/wiki/God_of_War_(2018)" target="_blank">Fandom wiki for the game</a><br>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ra_R-K_IoUc" 
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+            </iframe>
+        </p>
+    </div>
+</section>
 
-                    
-                    <a href="https://www.metacritic.com/game/playstation-4/god-of-war" target="_blank">
-                        Metacritic reviews
-                    </a>
+<section id="Reviews">
+    <div class="section-inner">
+        <p>
+            This game seems to get really good reviews from critics <br>
+            And players. It has a full score on both IGN and Metacritic<br>
+        </p>
+        <a href="https://www.ign.com/articles/2018/04/12/god-of-war-review" target="_blank">
+            IGN review
+        </a>
 
-                    <p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x_MtcOznfM4"
-                         frameborder="0" 
-                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                         allowfullscreen>
-                        
-                        </iframe>
-                    </p>
-                </div>
-            </section>
+        
+        <a href="https://www.metacritic.com/game/playstation-4/god-of-war" target="_blank">
+            Metacritic reviews
+        </a>
 
-            <section id="MyThoughts">
-                <div class="section-inner">
-                    <h2>What's good about the game?</h2>
-                    <p>
-                        The graphics of the game are really good quality<br>
-                        It is also the first God of War game made for the ps4<br>
-                        So there is a big improvement in graphics.<br>
-                        The controls of the game are also really good and the combat and puzzles in<br>
-                        the game are really engaging.
-                    </p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x_MtcOznfM4"
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen>
+            
+            </iframe>
+        </p>
+    </div>
+</section>
 
-                    <h2>Why do I like the game?</h2>
-                    <p>
-                        <ol>
-                            <li>It has really good characters and a good story</li>
-                            <li>the combat is engaging</li>
-                            <li>plenty of puzzles to break up combat</li>
-                            <li>lots of items to collect so you can customise gear</li>
-                            <li>difficult side content gives you something to work towards</li>
-                            <li>longest God of War game and only one made specifically for the ps4</li>
-                        </ol>
-                    </p>
+<section id="MyThoughts">
+    <div class="section-inner">
+        <h2>What's good about the game?</h2>
+        <p>
+            The graphics of the game are really good quality<br>
+            It is also the first God of War game made for the ps4<br>
+            So there is a big improvement in graphics.<br>
+            The controls of the game are also really good and the combat and puzzles in<br>
+            the game are really engaging.
+        </p>
 
-                    <h2>What do others think of the game?</h2>
-                    <p>
-                        <p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VE1BfkKSsbI"
-                             frameborder="0"
-                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                            </iframe>
-                        </p>
-                        <br>
-                        From the reviews of the game that I could find online, both critics and players alike<br>
-                        Seem to really enjoy this game.<br>
-                        I think the main reason for this is the fact that this is the only <br>
-                        God of War game that was made for the current gen of consoles<br>
-                        so people were waiting for a while for a new game.<br>
-                        I think a new setting in Norse mythology also helped the game<br>
-                        To be liked more as it gave it a fresh feeling<br>
-                        As the other games in the series all took place in Greek mythology.
-                    </p>
-                </div>
-            </section>
-        </main>    
-    </body>
-</html>
+        <h2>Why do I like the game?</h2>
+        <p>
+            <ol>
+                <li>It has really good characters and a good story</li>
+                <li>the combat is engaging</li>
+                <li>plenty of puzzles to break up combat</li>
+                <li>lots of items to collect so you can customise gear</li>
+                <li>difficult side content gives you something to work towards</li>
+                <li>longest God of War game and only one made specifically for the ps4</li>
+            </ol>
+        </p>
+
+        <h2>What do others think of the game?</h2>
+        <p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VE1BfkKSsbI"
+                 frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </p>
+            <br>
+            From the reviews of the game that I could find online, both critics and players alike<br>
+            Seem to really enjoy this game.<br>
+            I think the main reason for this is the fact that this is the only <br>
+            God of War game that was made for the current gen of consoles<br>
+            so people were waiting for a while for a new game.<br>
+            I think a new setting in Norse mythology also helped the game<br>
+            To be liked more as it gave it a fresh feeling<br>
+            As the other games in the series all took place in Greek mythology.
+        </p>
+    </div>
+</section>
+{% endblock %}

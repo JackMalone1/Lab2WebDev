@@ -39,11 +39,13 @@ def display_assassins_creed():
                            pageTitle="Assassin's Creed")
 
 
+@app.route("/GodOfWar")
 def display_god_of_war():
     return render_template("GOW.html",
                            pageTitle="God of War")
 
 
+@app.route("/DFFOO")
 def display_final_fantasy():
     return render_template("DFFOO.html",
                            pageTitle="Dissidia Final Fantasy Opera Omnia")
